@@ -16,7 +16,7 @@ func main() {
 しかし以下のように引数が`...interface{}`となっている場合はコンパイルに失敗してしまう。
 
 ```
-func A(args ...string) {}
+func A(args ...interface{}) {}
 
 func main() {
   args := []string{"a", "b"}
