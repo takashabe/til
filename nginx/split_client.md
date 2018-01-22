@@ -20,8 +20,8 @@ http {
   }
 
   split_clients "${arg_token}" $version {
-    0.5%  edge;
-    *     stable;
+    90%  stable;
+    *    edge;
   }
 
   server {
