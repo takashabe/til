@@ -36,7 +36,19 @@
 
 ### 字句解析器
 
-- ゴール
+#### 字句解析やること
+
+- 入出力
+    - in: 文字列(ソースコード)
+    - out: トークン列
+- 処理の流れ
+    - 1文字ずつ文字列を走査
+    - 事前定義しておいたトークンと走査した文字列を紐づけ
+    - トークンを出力
+
+#### コード
+
+- テスト
 
 ```
 func TestNextToken(t *testing.T) {
@@ -225,7 +237,16 @@ func Start(in io.Reader, out io.Writer) {
 
 ### おまけ
 
-- `go/scanner`
-    - 他の構文解析器とかもgoパッケージと照らし合わせてみてみる
+- goではどうなの?
+    - 字句解析
+        - `go/scanner`
+        - `go/token`
+    - 構文解析
+        - `go/parser`
+        - `go/ast`
+        - (`cmd/gofmt`)
+    - 評価
+        - `cmd/compile`
+
 - support 🍣
     - runeのこと
