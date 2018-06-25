@@ -1,10 +1,10 @@
-## reflect.DeepEqualで関数が埋め込んである構造体を比較する
+# reflect.DeepEqualで関数が埋め込んである構造体を比較する
 
-### TL;DR
+## TL;DR
 
 関数同士の厳密な比較は出来ないので、比較時に関数をnilに差し替えるなどの工夫が必要
 
-### reflect.DeepEqualの比較について
+## reflect.DeepEqualの比較について
 
 [reflect.DeepEqual](https://golang.org/pkg/reflect/#DeepEqual)はstruct, map, arrayなどをいい感じに比較してくれる便利なものです。
 
@@ -29,7 +29,7 @@ case Func:
     return false
 ```
 
-#### 実行例
+### 実行例
 
 ```
 package main
@@ -54,4 +54,4 @@ func main() {
 }
 ```
 
-https://play.golang.org/p/yxlPGnUZ_Y
+[https://play.golang.org/p/yxlPGnUZ_Y](https://play.golang.org/p/yxlPGnUZ_Y)

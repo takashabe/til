@@ -1,6 +1,6 @@
-## スライスを展開して ...interface{} 型の引数に渡す
+# スライスを展開して ...interface{} 型の引数に渡す
 
-#### スライスの展開
+## スライスの展開
 
 スライスargsがあるとき`args...`で展開することが出来る。
 
@@ -26,7 +26,7 @@ func main() {
 // => cannot use args (type []string) as type []interface {} in argument to A
 ```
 
-#### ...interface{}への展開
+## ...interface{}への展開
 
 [FAQ](https://golang.org/doc/faq#convert_slice_of_interface)によると`[]T`から`[]interface{}`にはキャスト出来ないので、明示的にスライスを用意すれば良いと書いてある。
 
