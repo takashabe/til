@@ -1,5 +1,7 @@
 # Writing An Interpreter in Go 読書会#1
 
+[Go言語でつくるインタプリタ(和訳版)](https://www.oreilly.co.jp/books/9784873118222/)
+
 ## Indexs
 
 - 全体像
@@ -250,4 +252,4 @@ func Start(in io.Reader, out io.Writer) {
 
 - support 🍣
     - runeで実装すれば可能
-    - (https://github.com/takashabe/monkey/commit/e980b30f973d594ae8cef14abb109d3e88881e07)[https://github.com/takashabe/monkey/commit/e980b30f973d594ae8cef14abb109d3e88881e07]
+    - [https://github.com/takashabe/monkey/commit/e980b30f973d594ae8cef14abb109d3e88881e07](https://github.com/takashabe/monkey/commit/e980b30f973d594ae8cef14abb109d3e88881e07)
