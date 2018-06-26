@@ -1,4 +1,4 @@
-# Writing An Interpreter in Go #1
+# Writing An Interpreter in Go 読書会#1
 
 ## Indexs
 
@@ -249,4 +249,5 @@ func Start(in io.Reader, out io.Writer) {
         - `cmd/compile`
 
 - support 🍣
-    - runeのこと
+    - runeで実装すれば可能
+    - (https://github.com/takashabe/monkey/commit/e980b30f973d594ae8cef14abb109d3e88881e07)[https://github.com/takashabe/monkey/commit/e980b30f973d594ae8cef14abb109d3e88881e07]
